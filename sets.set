@@ -1,0 +1,87 @@
+# Contains tasks for which treatment of arrays is necessary in order to determine reachability.
+array-examples/*.yml
+array-industry-pattern/*.yml
+reducercommutativity/*.yml
+array-tiling/*.yml
+array-programs/*.yml
+array-crafted/*.yml
+array-multidimensional/*.yml
+array-patterns/*.yml
+array-cav19/*.yml
+array-lopstr16/*.yml
+array-fpi/*.yml# Contains tasks for which treatment of bit-operations is necessary.
+bitvector/*.yml
+bitvector-regression/*.yml
+bitvector-loops/*.yml
+# Contains programs combined from other sv-benchmark tasks through loose coupling
+combinations/*.yml
+# Contains programs for which the correctness depends mostly on the control-flow structure and integer variables. There is no particular focus on pointers, data structures, and concurrency.
+ntdrivers-simplified/*.yml
+openssl-simplified/*.yml
+locks/*.yml
+ntdrivers/*.yml
+openssl/*.yml
+# Contains programs that represent event-condition-action systems.
+eca-rers2012/*.yml
+eca-rers2018/*.yml
+psyco/*.yml
+eca-programs/*.yml
+# Contains tasks for checking programs with floating-point arithmetics.
+floats-cdfpl/*.yml
+floats-cbmc-regression/*.yml
+float-benchs/*.yml
+floats-esbmc-regression/*.yml
+float-newlib/*.yml
+loop-floats-scientific-comp/*.yml
+# Contains tasks that require the analysis of data structures on the heap, pointer aliases, and function pointers.
+heap-manipulation/*.yml
+list-properties/*.yml
+ldv-regression/*.yml
+ddv-machzwd/*.yml
+forester-heap/*.yml
+list-ext-properties/*.yml
+list-ext2-properties/*.yml
+ldv-sets/*.yml
+list-simple/*.yml
+heap-data/*.yml
+list-ext3-properties/*.yml
+# Contains tasks for which loop analysis is necessary.
+loops/*.yml
+loop-acceleration/*.yml
+loop-crafted/*.yml
+loop-invgen/*.yml
+loop-lit/*.yml
+loop-new/*.yml
+loop-industry-pattern/*.yml
+loops-crafted-1/*.yml
+loop-invariants/*.yml
+loop-simple/*.yml
+loop-zilu/*.yml
+verifythis/duplets.yml
+verifythis/elimination_max.yml
+verifythis/lcp.yml
+verifythis/prefixsum_iter.yml
+verifythis/tree_del_iter.yml
+verifythis/tree_del_iter_incorrect.yml
+nla-digbench/*.yml
+nla-digbench-scaling/*.yml
+# Contains programs that represents 'products' and 'product simulators' that are derived using different configurations of product lines.
+product-lines/*.yml
+# Contains tasks for which recursive analysis is necessary.
+recursive/*.yml
+recursive-simple/*.yml
+recursive-with-pointer/*.yml
+verifythis/prefixsum_rec.yml
+verifythis/tree_del_rec.yml
+verifythis/tree_del_rec_incorrect.yml
+verifythis/tree_max.yml
+verifythis/tree_max_incorrect.yml
+verifythis/elimination_max_rec.yml
+verifythis/elimination_max_rec_onepoint.yml
+# Contains sequentialized concurrent programs that were derived from SystemC programs. The programs were transformed to pure C programs by incorporating the scheduler into the C code.
+systemc/*.yml
+seq-mthreaded/*.yml
+seq-mthreaded-reduced/*.yml
+seq-pthread/*.yml
+# Contains tasks from the XCSP_to_C tool benchmark set.
+xcsp/*.yml
