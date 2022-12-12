@@ -1,3 +1,4 @@
+#include <lamp.h>
 extern void abort(void);
 extern void __assert_fail(const char *, const char *, unsigned int, const char *) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__noreturn__));
 void reach_error() { __assert_fail("0", "BallRajamani-SPIN2000-Fig1.c", 3, "reach_error"); }
@@ -11,7 +12,6 @@ void reach_error() { __assert_fail("0", "BallRajamani-SPIN2000-Fig1.c", 3, "reac
  * 
  */
 
-extern int __VERIFIER_nondet_int(void);
 
 int g;
 
@@ -25,7 +25,7 @@ int A(int a1, int a2) {
 
 
 int main() {
-    int g = __VERIFIER_nondet_int();
+    int g = __lamp_any_i32();
     int h = !g;
     A(g,h);
     A(g,h);

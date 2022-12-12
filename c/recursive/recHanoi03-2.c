@@ -1,3 +1,4 @@
+#include <lamp.h>
 extern void abort(void);
 extern void __assert_fail(const char *, const char *, unsigned int, const char *) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__noreturn__));
 void reach_error() { __assert_fail("0", "recHanoi03-2.c", 3, "reach_error"); }
@@ -9,7 +10,6 @@ void reach_error() { __assert_fail("0", "recHanoi03-2.c", 3, "reach_error"); }
  *      Author: Stefan Wissert
  */
 
-extern int __VERIFIER_nondet_int(void);
 
 /*
  * This function returns the optimal amount of steps,
@@ -24,7 +24,7 @@ int hanoi(int n) {
 
 
 int main() {
-    int n = __VERIFIER_nondet_int();
+    int n = __lamp_any_i32();
     if (n < 1 || n > 31) {
     	return 0;
     }

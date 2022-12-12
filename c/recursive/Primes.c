@@ -1,3 +1,4 @@
+#include <lamp.h>
 extern void abort(void);
 extern void __assert_fail(const char *, const char *, unsigned int, const char *) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__noreturn__));
 void reach_error() { __assert_fail("0", "Primes.c", 3, "reach_error"); }
@@ -11,7 +12,6 @@ void reach_error() { __assert_fail("0", "Primes.c", 3, "reach_error"); }
  * 
  */
 
-extern int __VERIFIER_nondet_int(void);
 
 // Multiplies two integers n and m
 int mult(int n, int m) {
@@ -74,20 +74,20 @@ int is_prime_(int n, int m) {
 }
 
 int main() {
-    int n = __VERIFIER_nondet_int();
+    int n = __lamp_any_i32();
     if (n < 1 || n > 46340) {
         // additional branch to avoid undefined behavior 
         // (because of signed integer overflow)
         return 0;
     }
     int result = is_prime(n);
-    int f1 = __VERIFIER_nondet_int();
+    int f1 = __lamp_any_i32();
     if (f1 < 1 || f1 > 46340) {
         // additional branch to avoid undefined behavior 
         // (because of signed integer overflow)
         return 0;
     }
-    int f2 = __VERIFIER_nondet_int();
+    int f2 = __lamp_any_i32();
     if (f2 < 1 || f2 > 46340) {
         // additional branch to avoid undefined behavior 
         // (because of signed integer overflow)

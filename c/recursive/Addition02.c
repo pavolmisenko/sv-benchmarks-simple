@@ -1,3 +1,4 @@
+#include <lamp.h>
 extern void abort(void);
 extern void __assert_fail(const char *, const char *, unsigned int, const char *) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__noreturn__));
 void reach_error() { __assert_fail("0", "Addition02.c", 3, "reach_error"); }
@@ -10,7 +11,6 @@ void reach_error() { __assert_fail("0", "Addition02.c", 3, "reach_error"); }
  * 
  */
 
-extern int __VERIFIER_nondet_int(void);
 
 int addition(int m, int n) {
     if (n == 0) {
@@ -26,13 +26,13 @@ int addition(int m, int n) {
 
 
 int main() {
-    int m = __VERIFIER_nondet_int();
+    int m = __lamp_any_i32();
     if (m < 0 || m > 1073741823) {
         // additional branch to avoid undefined behavior 
         // (because of signed integer overflow)
         return 0;
     }
-    int n = __VERIFIER_nondet_int();
+    int n = __lamp_any_i32();
     if (n < 0 || n > 1073741823) {
         // additional branch to avoid undefined behavior 
         // (because of signed integer overflow)
